@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary blur-xl opacity-30 group-hover:opacity-60 transition-opacity rounded-full" />
-            <img src={logo} alt="Shreepad Communication logo" className="relative h-12 w-12 object-contain" />
+            <img src={logo} alt="Shreepad Communication logo" className="relative h-20 w-20 object-contain" />
           </div>
           <div className="hidden sm:block leading-tight">
             <div className={cn("font-bold text-base", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>
