@@ -30,11 +30,11 @@ const Navbar = () => {
       "fixed top-0 inset-x-0 z-50 transition-all duration-300",
       scrolled ? "bg-background/85 backdrop-blur-lg shadow-card border-b border-border" : "bg-transparent"
     )}>
-      <nav className="container mx-auto flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3 group">
+      <nav className="container mx-auto flex items-center justify-between py-4">
+        <Link to="/" className="flex items-center gap-4 group">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary blur-xl opacity-30 group-hover:opacity-60 transition-opacity rounded-full" />
-            <img src={logo} alt="Shreepad Communication logo" className="relative h-20 w-20 object-contain" />
+            <img src={logo} alt="Shreepad Communication logo" className="relative h-32 w-32 object-contain" />
           </div>
           <div className="hidden sm:block leading-tight">
             <div className={cn("font-bold text-base", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>

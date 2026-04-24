@@ -6,7 +6,7 @@ interface Props {
   children?: ReactNode;
 }
 const PageHeader = ({ title, subtitle, children }: Props) => (
-  <section className="relative pt-32 pb-16 bg-gradient-hero text-white overflow-hidden">
+  <section className="relative pt-40 pb-16 bg-gradient-hero text-white overflow-hidden">
     <div className="absolute inset-0 opacity-30">
       <div className="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-primary-glow/30 blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-accent/20 blur-3xl" />
