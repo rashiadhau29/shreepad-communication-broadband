@@ -19,10 +19,10 @@ const About = () => (
         </div>
         <div className="grid grid-cols-2 gap-5">
           {[
-            { icon: Award, n: "10+", l: "Years Experience" },
-            { icon: Users, n: "600+", l: "Active Customers" },
+            { icon: Award, n: "15+", l: "Years Experience" },
+            { icon: Users, n: "1500+", l: "Active Customers" },
             { icon: Cable, n: "100%", l: "Own Fiber Network" },
-            { icon: Building2, n: "PCMC", l: "& Pune Coverage" },
+            { icon: Building2, n: "Shreepad Communication", l: "PCMC & Pune Coverage" },
           ].map((s) => (
             <Card key={s.l} className="p-6 bg-gradient-card shadow-card hover:shadow-elegant transition-all">
               <div className="h-12 w-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4">
@@ -39,7 +39,7 @@ const About = () => (
     <section className="py-20 bg-muted/40">
       <div className="container mx-auto grid md:grid-cols-3 gap-6">
         {[
-          { icon: Target, title: "Our Mission", text: "Empower every home and business in Maharashtra with reliable, high-speed connectivity at honest prices." },
+          { icon: Target, title: "Our Mission", text: "Empower every home and business in Maharashtra with reliable, high-speed connectivity at honest rates." },
           { icon: Eye, title: "Our Vision", text: "To be the most loved regional ISP, known for fiber-grade speeds and best-in-class customer service." },
           { icon: Heart, title: "Our Values", text: "Reliability, transparency and customer-first thinking guide every connection we deliver." },
         ].map((b) => (

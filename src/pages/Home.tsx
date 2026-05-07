@@ -59,8 +59,8 @@ const Home = () => {
 
             <div className="grid grid-cols-3 gap-6 mt-14 max-w-xl">
               {[
-                { n: "10+", l: "Years Experience" },
-                { n: "600+", l: "Active Customers" },
+                { n: "15+", l: "Years Experience" },
+                { n: "1500+", l: "Active Customers" },
                 { n: "99.9%", l: "Uptime" },
               ].map((s) => (
                 <div key={s.l}>
@@ -83,7 +83,7 @@ const Home = () => {
               Shreepad Communication Pvt. Ltd. is a trusted provider of high-speed internet and CCTV surveillance solutions for residential and commercial users across Maharashtra.
             </p>
             <div className="space-y-3">
-              {["10+ years of industry experience", "600+ active happy customers", "Own end-to-end fiber infrastructure"].map((p) => (
+              {["15+ years of industry experience", "1500+ active happy customers", "Own end-to-end fiber infrastructure"].map((p) => (
                 <div key={p} className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
                   <span>{p}</span>
@@ -96,10 +96,10 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-2 gap-5">
             {[
-              { icon: Award, n: "10+", l: "Years" },
-              { icon: Users, n: "600+", l: "Customers" },
+              { icon: Award, n: "15+", l: "Years" },
+              { icon: Users, n: "1500+", l: "Customers" },
               { icon: Cable, n: "Own", l: "Fiber Network" },
-              { icon: Building2, n: "PCMC", l: "& Pune Coverage" },
+              { icon: Building2, n: "Shreepad Communication", l: "PCMC & Pune Coverage" },
             ].map((s, i) => (
               <Card key={s.l} className="p-6 bg-gradient-card shadow-card hover:shadow-elegant hover:-translate-y-1 transition-all" style={{ animationDelay: `${i * 100}ms` }}>
                 <div className="h-12 w-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4">
@@ -159,11 +159,7 @@ const Home = () => {
                 )}
                 <div className="text-sm text-muted-foreground uppercase tracking-widest">{p.type}</div>
                 <div className="text-4xl font-bold text-gradient mt-2">{p.speed}</div>
-                <div className="mt-4 mb-5">
-                  <span className="text-3xl font-bold">{p.price}</span>
-                  <span className="text-muted-foreground">{p.period}</span>
-                </div>
-                <ul className="space-y-2 mb-6">
+                                <ul className="space-y-2 mb-6">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />{f}
@@ -229,8 +225,8 @@ const Home = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-sm font-semibold text-primary uppercase tracking-widest">Testimonials</span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-3">Trusted by 600+ customers</h2>
-            <p className="text-muted-foreground mt-4">Trusted by 600+ Home & Business Customers in PCMC & Pune Area</p>
+            <h2 className="text-3xl md:text-5xl font-bold mt-3">Trusted by 1500+ customers</h2>
+            <p className="text-muted-foreground mt-4">Trusted by 1500+ Home & Business Customers by Shreepad Communication in PCMC & Pune Area</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((t) => (

@@ -1,6 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import { Card } from "@/components/ui/card";
-import { Wifi, Building2, Camera, Lock, Eye, Wrench, Cable, Server, CheckCircle2 } from "lucide-react";
+import { Wifi, Building2, Camera, Lock, Eye, Wrench, Cable, Server, CheckCircle2, HardHat, Network } from "lucide-react";
 
 const groups = [
   {
@@ -19,6 +19,15 @@ const groups = [
       { icon: Eye, title: "Remote Monitoring", desc: "View your premises from anywhere on mobile." },
       { icon: Lock, title: "Access Control", desc: "Biometric, RFID and smart access systems." },
       { icon: Wrench, title: "AMC Support", desc: "Annual maintenance contracts for total peace of mind." },
+    ],
+  },
+  {
+    title: "Infrastructure Projects",
+    items: [
+      { icon: HardHat, title: "Network Infra Management", desc: "Expert analysis of fiber routes and point-to-point connectivity to optimize your network infrastructure." },
+      { icon: Network, title: "Fiber Network Planning", desc: "Complete fiber optic network design and deployment for residential and commercial projects." },
+      { icon: Cable, title: "Structured Cabling", desc: "End-to-end structured cabling solutions including CAT6, CAT6A and fiber installations." },
+      { icon: Building2, title: "Infrastructure Optimization", desc: "Reduce infra costs and focus on effective network solutions with our expert guidance." },
     ],
   },
 ];

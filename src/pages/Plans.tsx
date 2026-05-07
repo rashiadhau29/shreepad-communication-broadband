@@ -17,11 +17,7 @@ const Plans = () => (
             {p.popular && <div className="absolute top-0 right-0 bg-gradient-accent text-accent-foreground text-xs font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">Popular</div>}
             <div className="text-sm text-muted-foreground uppercase tracking-widest">{p.type}</div>
             <div className="text-4xl font-bold text-gradient mt-2">{p.speed}</div>
-            <div className="mt-4 mb-5">
-              <span className="text-3xl font-bold">{p.price}</span>
-              <span className="text-muted-foreground">{p.period}</span>
-            </div>
-            <ul className="space-y-2 mb-6">
+                        <ul className="space-y-2 mb-6">
               {p.features.map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm"><CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />{f}</li>
               ))}
