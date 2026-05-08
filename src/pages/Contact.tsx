@@ -145,7 +145,7 @@ const Contact = () => {
     name: form.name,
     phone: form.phone,
     message: form.message,
-    email: "sujitkhojare24@gmail.com",
+    email: "info@shreepadcommunication.com",
   },
   "3JMQFLMX48ya0o5wB"
 );

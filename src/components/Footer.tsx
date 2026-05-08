@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground mt-20">
-      <div className="container mx-auto py-14 grid gap-10 md:grid-cols-4">
+      <div className="container mx-auto py-14 grid gap-10 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3 mb-4">
             <img src={logo} alt="Shreepad logo" className="h-12 w-16" />
@@ -44,14 +44,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
-          <h4 className="font-semibold mb-4 text-accent">Follow Us</h4>
-          <div className="flex gap-3">
-            <a href="#" aria-label="Facebook" className="h-10 w-10 rounded-full bg-white/10 hover:bg-accent hover:text-secondary flex items-center justify-center transition"><Facebook className="h-4 w-4" /></a>
-            <a href="#" aria-label="Instagram" className="h-10 w-10 rounded-full bg-white/10 hover:bg-accent hover:text-secondary flex items-center justify-center transition"><Instagram className="h-4 w-4" /></a>
-            <a href="#" aria-label="LinkedIn" className="h-10 w-10 rounded-full bg-white/10 hover:bg-accent hover:text-secondary flex items-center justify-center transition"><Linkedin className="h-4 w-4" /></a>
-          </div>
-        </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/50">
         © {new Date().getFullYear()} Shreepad Communication Pvt. Ltd. All rights reserved.
