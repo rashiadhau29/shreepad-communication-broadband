@@ -37,11 +37,13 @@ const Home = () => {
         <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-primary-glow/20 blur-3xl animate-pulse-glow" />
 
         <div className="container mx-auto relative z-10 pt-24 pb-16">
-          <div className="max-w-3xl text-white animate-fade-up">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur text-xs font-medium uppercase tracking-widest mb-6">
+          <div className="flex justify-end mb-6 text-white">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur text-xs font-medium uppercase tracking-widest">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               Maharashtra's trusted ISP
             </span>
+          </div>
+          <div className="max-w-3xl text-white animate-fade-up">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Reliable Internet & <span className="text-gradient">Security Solutions</span> for Every Need
             </h1>

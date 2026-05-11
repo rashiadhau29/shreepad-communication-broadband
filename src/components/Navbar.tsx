@@ -30,15 +30,15 @@ const Navbar = () => {
       "fixed top-0 inset-x-0 z-50 transition-all duration-300",
       scrolled ? "bg-background/85 backdrop-blur-lg shadow-card border-b border-border" : "bg-transparent"
     )}>
-      <nav className="container mx-auto flex items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-4 group">
-          <div className="relative">
+      <nav className="container mx-auto flex items-center justify-between py-2">
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative shrink-0">
             <div className="absolute inset-0 bg-gradient-primary blur-xl opacity-30 group-hover:opacity-60 transition-opacity rounded-full" />
-            <img src={logo} alt="Shreepad Communication logo" className="relative h-24 w-24 object-contain" />
+            <img src={logo} alt="Shreepad Communication logo" className="relative h-28 w-28 object-contain" />
           </div>
-          <div className="hidden sm:block leading-tight">
-            <div className={cn("font-bold text-base", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>
-            <div className={cn("text-[11px] uppercase tracking-widest", scrolled ? "text-muted-foreground" : "text-white/70")}>Pvt. Ltd.</div>
+          <div className="hidden sm:flex flex-col justify-center leading-tight">
+            <div className={cn("font-bold text-xl md:text-2xl", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>
+            <div className={cn("text-xs uppercase tracking-[0.2em]", scrolled ? "text-muted-foreground" : "text-white/70")}>Pvt. Ltd.</div>
           </div>
         </Link>
 
