@@ -17,18 +17,18 @@ const About = () => (
             With our own end-to-end fiber infrastructure, expert in-house engineers and 24/7 customer support, we ensure that every customer enjoys reliable connectivity and complete peace of mind.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 min-w-0">
           {[
             { icon: Award, n: "15+", l: "Years Experience" },
             { icon: Users, n: "1500+", l: "Active Customers" },
             { icon: Cable, n: "100%", l: "Own Fiber Network" },
             { icon: Building2, n: "Shreepad Communication", l: "PCMC & Pune Coverage" },
           ].map((s) => (
-            <Card key={s.l} className="p-6 bg-gradient-card shadow-card hover:shadow-elegant transition-all">
+            <Card key={s.l} className="p-6 bg-gradient-card shadow-card hover:shadow-elegant transition-all min-w-0">
               <div className="h-12 w-12 rounded-xl bg-gradient-primary flex items-center justify-center mb-4">
                 <s.icon className="h-6 w-6 text-primary-foreground" />
               </div>
-              <div className="text-3xl font-bold">{s.n}</div>
+              <div className="text-2xl sm:text-3xl font-bold break-words leading-tight">{s.n}</div>
               <div className="text-sm text-muted-foreground">{s.l}</div>
             </Card>
           ))}

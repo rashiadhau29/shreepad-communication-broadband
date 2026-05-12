@@ -10,7 +10,7 @@ const Footer = () => {
         href="https://wa.me/918237000031"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 left-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform hover:scale-110 animate-bounce"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform hover:scale-110 animate-bounce"
         title="Chat on WhatsApp"
       >
         <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

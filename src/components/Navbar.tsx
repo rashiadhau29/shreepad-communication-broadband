@@ -27,17 +27,29 @@ const Navbar = () => {
 
   return (
     <header className={cn(
-      "fixed top-0 inset-x-0 z-50 transition-all duration-300",
+      "fixed top-0 inset-x-0 z-50 transition-all duration-300 overflow-x-hidden",
       scrolled ? "bg-background/85 backdrop-blur-lg shadow-card border-b border-border" : "bg-transparent"
     )}>
-      <nav className="container mx-auto flex items-center justify-between py-2">
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="relative shrink-0">
-            <div className="absolute inset-0 bg-gradient-primary blur-xl opacity-30 group-hover:opacity-60 transition-opacity rounded-full" />
-            <img src={logo} alt="Shreepad Communication logo" className="relative h-28 w-28 object-contain" />
+      <nav className="container mx-auto flex items-center justify-between gap-2 sm:gap-4 py-2">
+        <Link to="/" className="flex min-w-0 shrink items-center gap-2 sm:gap-3 group">
+          <div className="relative shrink-0 isolate">
+            {/* Softer glow on desktop (lg+) — strong blur read as a heavy “shadow” */}
+            <div
+              aria-hidden
+              className={cn(
+                "pointer-events-none absolute inset-[-8px] rounded-full bg-gradient-primary transition-opacity duration-300",
+                "blur-md opacity-[0.22] group-hover:opacity-[0.38]",
+                "lg:inset-[-4px] lg:blur-sm lg:opacity-[0.06] lg:group-hover:opacity-[0.12]"
+              )}
+            />
+            <img
+              src={logo}
+              alt="Shreepad Communication logo"
+              className="relative z-[1] h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28 object-contain"
+            />
           </div>
-          <div className="hidden sm:flex flex-col justify-center leading-tight">
-            <div className={cn("font-bold text-xl md:text-2xl", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>
+          <div className="hidden sm:flex flex-col justify-center leading-tight min-w-0">
+            <div className={cn("font-bold text-xl md:text-2xl break-words", scrolled ? "text-foreground" : "text-white")}>Shreepad Communication</div>
             <div className={cn("text-xs uppercase tracking-[0.2em]", scrolled ? "text-muted-foreground" : "text-white/70")}>Pvt. Ltd.</div>
           </div>
         </Link>
@@ -69,9 +81,16 @@ const Navbar = () => {
         </div>
 
         <button
-          className={cn("lg:hidden p-2 rounded-md", scrolled ? "text-foreground" : "text-white")}
+          type="button"
+          className={cn(
+            "lg:hidden shrink-0 p-2 rounded-md border transition-colors",
+            scrolled
+              ? "text-foreground border-border/60 bg-background/80"
+              : "text-white border-white/50 bg-white/10 hover:bg-white/20"
+          )}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>

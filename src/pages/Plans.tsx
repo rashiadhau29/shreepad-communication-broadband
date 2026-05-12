@@ -42,7 +42,15 @@ const Plans = () => (
                   <li key={f} className="flex items-start gap-2 text-sm"><CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />{f}</li>
                 ))}
               </ul>
-              <Button asChild variant="hero" className="w-full"><Link to="/contact">Get Quote</Link></Button>
+              <Button asChild variant="hero" className="w-full">
+                <a 
+                  href={`https://wa.me/918237000031?text=Hii%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(p.speed)}%20${encodeURIComponent(p.type)}%20plan%20(${encodeURIComponent(p.period)})%3A%0A${encodeURIComponent(p.features.join('\n'))}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Quote
+                </a>
+              </Button>
             </Card>
           ))}
         </div>
