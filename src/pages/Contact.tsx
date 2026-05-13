@@ -137,38 +137,41 @@ const Contact = () => {
 
     setErrors({});
 
-    try {
-  await emailjs.send(
-  "service_cd1119c",
-  "template_k9i4ubb",
+ try {
+await emailjs.send(
+  "service_tetlrag",
+  "template_zt9m6jh",
   {
     name: form.name,
     phone: form.phone,
     message: form.message,
-    email: "shreecom0204@gmail.com",
+    email: "shreepad2026@gmail.com",
   },
-  "3JMQFLMX48ya0o5wB"
+  "1hSy9L-vf2KIq66FU"
 );
 
-      toast({
-        title: "Message sent!",
-        description: "Our team will contact you shortly.",
-      });
+  toast({
+    title: "Message sent successfully!",
+    description: "Our team will contact you shortly.",
+    className: "top-5 right-5 bg-green-600 text-white border-green-700",
+  });
 
-      setForm({
-        name: "",
-        phone: "",
-        message: "",
-      });
+  setForm({
+    name: "",
+    phone: "",
+    message: "",
+  });
 
-    } catch (error) {
-      toast({
-        title: "Failed to send",
-        description: "Please try again later.",
-      });
+} catch (error) {
 
-      console.error(error);
-    }
+  toast({
+    title: "Failed to send",
+    description: "Please try again later.",
+    className: "top-5 right-5 bg-red-600 text-white border-red-700",
+  });
+
+  console.error(error);
+}
   };
 
   return (
@@ -325,5 +328,4 @@ const Contact = () => {
 };
 
 export default Contact;
-
 
